@@ -1,6 +1,6 @@
 {
   "name": "lcs_verify_face",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LCS Verify Face is a JavaScript library for browser-based facial verification using FaceAPI.js. It enables real-time face detection, blink detection, video recording, and image extraction for authentication and security applications.",
   "main": "dist/lvf.min.js",
   "module": "src/lvf.js",
