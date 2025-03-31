@@ -1,0 +1,85 @@
+{
+  "name": "lcs_verify_face",
+  "version": "0.0.0",
+  "description": "LCS Verify Face is a JavaScript library for browser-based facial verification using FaceAPI.js. It enables real-time face detection, blink detection, video recording, and image extraction for authentication and security applications.",
+  "main": "dist/lvf.min.js",
+  "module": "src/lvf.js",
+  "files": [
+    "dist/lvf.min.js"
+  ],
+  "scripts": {
+    "build": "node obf.js && jsdoc -c jsdoc.json",
+    "release": "npm run build && standard-version && git push --follow-tags && npm publish",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcsnigeria/lcs_verify_face.git"
+  },
+  "keywords": [
+    "face verification",
+    "facial recognition",
+    "face detection",
+    "blink detection",
+    "biometric authentication",
+    "javascript",
+    "webcam",
+    "FaceAPI.js",
+    "browser security",
+    "identity verification",
+    "video processing",
+    "web security",
+    "lcs"
+  ],
+  "author": "jcfuniverse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcsnigeria/lcs_verify_face/issues"
+  },
+  "homepage": "https://github.com/lcsnigeria/lcs_verify_face#readme",
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4",
+    "standard-version": "^9.5.0"
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "docs",
+        "section": "Documentation"
+      },
+      {
+        "type": "style",
+        "section": "Code Style Changes"
+      },
+      {
+        "type": "refactor",
+        "section": "Refactoring"
+      },
+      {
+        "type": "test",
+        "section": "Tests"
+      },
+      {
+        "type": "chore",
+        "section": "Chores"
+      },
+      {
+        "type": "perf",
+        "section": "Performance Improvements"
+      }
+    ],
+    "commitUrlFormat": "https://github.com/lcsnigeria/lcs_verify_face/commit/{{hash}}",
+    "compareUrlFormat": "https://github.com/lcsnigeria/lcs_verify_face/compare/{{previousTag}}...{{currentTag}}",
+    "issueUrlFormat": "https://github.com/lcsnigeria/lcs_verify_face/issues/{{id}}"
+  }
+}
