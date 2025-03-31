@@ -3,9 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 // Input file and output directory
-const inputFilePath = './src/la.js';
+const inputFilePath = './src/lvf.js';
 const outputDirectory = './dist';
-const outputFilePath = path.join(outputDirectory, 'la.min.js');
+const outputFilePath = path.join(outputDirectory, 'lvf.min.js');
 
 // Function to clear the output directory
 const clearOutputDirectory = (directory) => {
